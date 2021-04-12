@@ -3,13 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		72DF31A926244E2200C4D53D /* YSDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF319F26244E2100C4D53D /* YSDataCollector.framework */; };
+		72DF31A926244E2200C4D53D /* YSDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF319F26244E2100C4D53D /* YSDataCollector.framework */; platformFilter = ios; };
 		72DF31AE26244E2200C4D53D /* YSDataCollectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31AD26244E2200C4D53D /* YSDataCollectorTests.swift */; };
 		72DF31B026244E2200C4D53D /* YSDataCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 72DF31A226244E2100C4D53D /* YSDataCollector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72DF31C02624521A00C4D53D /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31BF2624521A00C4D53D /* Interfaces.swift */; };
+		72DF31C12624521A00C4D53D /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31BF2624521A00C4D53D /* Interfaces.swift */; };
+		72DF31CD2624775800C4D53D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31CC2624775800C4D53D /* AppDelegate.swift */; };
+		72DF31D12624775800C4D53D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31D02624775800C4D53D /* ViewController.swift */; };
+		72DF31D42624775900C4D53D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DF31D22624775800C4D53D /* Main.storyboard */; };
+		72DF31D62624775C00C4D53D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72DF31D52624775C00C4D53D /* Assets.xcassets */; };
+		72DF31D92624775C00C4D53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72DF31D72624775C00C4D53D /* LaunchScreen.storyboard */; };
+		72DF31E52624788B00C4D53D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31E42624788B00C4D53D /* Coordinator.swift */; };
+		72DF31E62624788B00C4D53D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31E42624788B00C4D53D /* Coordinator.swift */; };
+		72DF31EE26247A3500C4D53D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31ED26247A3500C4D53D /* Factory.swift */; };
+		72DF31EF26247A3500C4D53D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF31ED26247A3500C4D53D /* Factory.swift */; };
+		72DF31F426247AFD00C4D53D /* YSDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF319F26244E2100C4D53D /* YSDataCollector.framework */; };
+		72DF31F526247AFD00C4D53D /* YSDataCollector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 72DF319F26244E2100C4D53D /* YSDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +33,28 @@
 			remoteGlobalIDString = 72DF319E26244E2100C4D53D;
 			remoteInfo = YSDataCollector;
 		};
+		72DF31F626247AFD00C4D53D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 72DF319626244E2100C4D53D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72DF319E26244E2100C4D53D;
+			remoteInfo = YSDataCollector;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72DF31F826247AFD00C4D53D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				72DF31F526247AFD00C4D53D /* YSDataCollector.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		72DF319F26244E2100C4D53D /* YSDataCollector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YSDataCollector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +63,16 @@
 		72DF31A826244E2200C4D53D /* YSDataCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSDataCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DF31AD26244E2200C4D53D /* YSDataCollectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSDataCollectorTests.swift; sourceTree = "<group>"; };
 		72DF31AF26244E2200C4D53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DF31BF2624521A00C4D53D /* Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interfaces.swift; sourceTree = "<group>"; };
+		72DF31CA2624775800C4D53D /* YSDCTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSDCTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DF31CC2624775800C4D53D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72DF31D02624775800C4D53D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72DF31D32624775800C4D53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72DF31D52624775C00C4D53D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72DF31D82624775C00C4D53D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72DF31DA2624775C00C4D53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72DF31E42624788B00C4D53D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		72DF31ED26247A3500C4D53D /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +91,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DF31C72624775800C4D53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DF31F426247AFD00C4D53D /* YSDataCollector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +107,9 @@
 			children = (
 				72DF31A126244E2100C4D53D /* YSDataCollector */,
 				72DF31AC26244E2200C4D53D /* YSDataCollectorTests */,
+				72DF31CB2624775800C4D53D /* YSDCTest */,
 				72DF31A026244E2100C4D53D /* Products */,
+				72DF31F326247AFD00C4D53D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +118,7 @@
 			children = (
 				72DF319F26244E2100C4D53D /* YSDataCollector.framework */,
 				72DF31A826244E2200C4D53D /* YSDataCollectorTests.xctest */,
+				72DF31CA2624775800C4D53D /* YSDCTest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +128,9 @@
 			children = (
 				72DF31A226244E2100C4D53D /* YSDataCollector.h */,
 				72DF31A326244E2100C4D53D /* Info.plist */,
+				72DF31BF2624521A00C4D53D /* Interfaces.swift */,
+				72DF31ED26247A3500C4D53D /* Factory.swift */,
+				72DF31E42624788B00C4D53D /* Coordinator.swift */,
 			);
 			path = YSDataCollector;
 			sourceTree = "<group>";
@@ -84,6 +142,26 @@
 				72DF31AF26244E2200C4D53D /* Info.plist */,
 			);
 			path = YSDataCollectorTests;
+			sourceTree = "<group>";
+		};
+		72DF31CB2624775800C4D53D /* YSDCTest */ = {
+			isa = PBXGroup;
+			children = (
+				72DF31CC2624775800C4D53D /* AppDelegate.swift */,
+				72DF31D02624775800C4D53D /* ViewController.swift */,
+				72DF31D22624775800C4D53D /* Main.storyboard */,
+				72DF31D52624775C00C4D53D /* Assets.xcassets */,
+				72DF31D72624775C00C4D53D /* LaunchScreen.storyboard */,
+				72DF31DA2624775C00C4D53D /* Info.plist */,
+			);
+			path = YSDCTest;
+			sourceTree = "<group>";
+		};
+		72DF31F326247AFD00C4D53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +214,25 @@
 			productReference = 72DF31A826244E2200C4D53D /* YSDataCollectorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		72DF31C92624775800C4D53D /* YSDCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72DF31DB2624775C00C4D53D /* Build configuration list for PBXNativeTarget "YSDCTest" */;
+			buildPhases = (
+				72DF31C62624775800C4D53D /* Sources */,
+				72DF31C72624775800C4D53D /* Frameworks */,
+				72DF31C82624775800C4D53D /* Resources */,
+				72DF31F826247AFD00C4D53D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72DF31F726247AFD00C4D53D /* PBXTargetDependency */,
+			);
+			name = YSDCTest;
+			productName = YSDCTest;
+			productReference = 72DF31CA2624775800C4D53D /* YSDCTest.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -147,8 +244,12 @@
 				TargetAttributes = {
 					72DF319E26244E2100C4D53D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					72DF31A726244E2200C4D53D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					72DF31C92624775800C4D53D = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -168,6 +269,7 @@
 			targets = (
 				72DF319E26244E2100C4D53D /* YSDataCollector */,
 				72DF31A726244E2200C4D53D /* YSDataCollectorTests */,
+				72DF31C92624775800C4D53D /* YSDCTest */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +289,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72DF31C82624775800C4D53D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DF31D92624775C00C4D53D /* LaunchScreen.storyboard in Resources */,
+				72DF31D62624775C00C4D53D /* Assets.xcassets in Resources */,
+				72DF31D42624775900C4D53D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DF31C02624521A00C4D53D /* Interfaces.swift in Sources */,
+				72DF31E52624788B00C4D53D /* Coordinator.swift in Sources */,
+				72DF31EE26247A3500C4D53D /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +316,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DF31EF26247A3500C4D53D /* Factory.swift in Sources */,
 				72DF31AE26244E2200C4D53D /* YSDataCollectorTests.swift in Sources */,
+				72DF31E62624788B00C4D53D /* Coordinator.swift in Sources */,
+				72DF31C12624521A00C4D53D /* Interfaces.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72DF31C62624775800C4D53D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DF31D12624775800C4D53D /* ViewController.swift in Sources */,
+				72DF31CD2624775800C4D53D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,10 +337,35 @@
 /* Begin PBXTargetDependency section */
 		72DF31AB26244E2200C4D53D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 72DF319E26244E2100C4D53D /* YSDataCollector */;
 			targetProxy = 72DF31AA26244E2200C4D53D /* PBXContainerItemProxy */;
 		};
+		72DF31F726247AFD00C4D53D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72DF319E26244E2100C4D53D /* YSDataCollector */;
+			targetProxy = 72DF31F626247AFD00C4D53D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		72DF31D22624775800C4D53D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DF31D32624775800C4D53D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		72DF31D72624775C00C4D53D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72DF31D82624775C00C4D53D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		72DF31B126244E2200C4D53D /* Debug */ = {
@@ -341,6 +493,7 @@
 		72DF31B426244E2200C4D53D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H25Y4QNT7W;
@@ -349,6 +502,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YSDataCollector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +511,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aos.YSDataCollector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +521,7 @@
 		72DF31B526244E2200C4D53D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = H25Y4QNT7W;
@@ -373,6 +530,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = YSDataCollector/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aos.YSDataCollector;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -389,6 +548,7 @@
 		72DF31B726244E2200C4D53D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H25Y4QNT7W;
 				INFOPLIST_FILE = YSDataCollectorTests/Info.plist;
@@ -407,6 +567,7 @@
 		72DF31B826244E2200C4D53D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H25Y4QNT7W;
 				INFOPLIST_FILE = YSDataCollectorTests/Info.plist;
@@ -416,6 +577,44 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aos.YSDataCollectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		72DF31DC2624775C00C4D53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H25Y4QNT7W;
+				INFOPLIST_FILE = YSDCTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aos.YSDCTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		72DF31DD2624775C00C4D53D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H25Y4QNT7W;
+				INFOPLIST_FILE = YSDCTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aos.YSDCTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +647,15 @@
 			buildConfigurations = (
 				72DF31B726244E2200C4D53D /* Debug */,
 				72DF31B826244E2200C4D53D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72DF31DB2624775C00C4D53D /* Build configuration list for PBXNativeTarget "YSDCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DF31DC2624775C00C4D53D /* Debug */,
+				72DF31DD2624775C00C4D53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
